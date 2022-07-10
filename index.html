@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+ 
+</head>
+<body>
+  <header class="cabeçalho">
+    <nav id="menu-container">
+        <div id="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <ul id="menu">
+          <li class="options-menu"><a href="#">About</a></li>
+          <li class="options-menu"><a href="#">Careers</a></li>
+          <li class="options-menu"><a href="#">Events</a></li>
+          <li class="options-menu"><a href="#">Products</a></li>
+          <li class="options-menu"><a href="#">Support</a></li>
+        </ul>
+        <a href="#" class="hamburguer"></a>       
+    </nav>
+    <ul class="menu-mobile">
+      <li class="options-menu"><a href="#">About</a></li>
+      <li class="options-menu"><a href="#">Careers</a></li>
+      <li class="options-menu"><a href="#">Events</a></li>
+      <li class="options-menu"><a href="#">Products</a></li>
+      <li class="options-menu"><a href="#">Support</a></li>
+    </ul>
+    <div id="mensagem-cabeçalho" class="mensagem">
+      <p>IMMERSIVE</p>
+      <p>EXPERIENCE</p>
+      <p>THAT DELIVER</p>
+    </div>
+
+  </header>
+  <main>
+    <div id="container-homem-oculos">
+      <div class="homem-oculos"><img src="images/desktop/image-interactive.jpg" alt=""></div>
+      <div class="texto-homem-oculos"><h1> THE LEADER IN INTERACTIVE VR </h1>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around
+          the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
+        </p>
+      </div>
+    </div>
+    <div id="container-our-creations">
+      <div class="our-creations"> <h1>OUR CREATIONS</h1></div>
+   <a href="#" class="see-all">SEE ALL</a>
+    </div>
+    <section id="container-galeria-fotos" >
+
+     <a href="#" class="foto" id="foto1"  > <h1 > DEEP EARTH</h1></a> 
+      <a href="#" class="foto" id="foto2" > <h1> NIGHT ARCADE </h1> </a> 
+      <a href="#" class="foto" id="foto3" > <h1>SOCCER TEAM VR</h1></a> 
+     <a href="#" class="foto" id="foto4"> <h1> THE GRID</h1></a> 
+     <a href="#" class="foto" id="foto5"> <h1> FROM ABOVE</h1></a> 
+      <a href="#" class="foto" id="foto6"  > <h1> POCKET BOREALIS</h1></a >
+      <a href="#" class="foto" id="foto7" > <h1> THE CURIOSITY</h1></a> 
+     <a href="#" class="foto" id="foto8" > <h1> MAKE IT FISHEYE</h1></a> 
+
+
+    </section>
+    <a href="#" class="see-all2">SEE ALL</a>
+  </main>
+  <footer>
+<div id="container-footer">
+<div id="footer1" > 
+    <div id="logo2"> <img src="images/logo.svg" alt=""> </div>
+    <div id="redes-sociais"> 
+     <a href="#" class="redes"><img src="images/icon-facebook.svg" alt=""></a> 
+     <a href="#" class="redes"><img src="images/icon-twitter.svg" alt=""></a> 
+     <a href="#" class="redes"><img src="images/icon-pinterest.svg" alt=""></a> 
+     <a href="#" class="redes"><img src="images/icon-instagram.svg" alt=""></a> 
+    </div>
+    
+
+  </div>
+  <div id="footer2" > 
+    <ul id="menu-footer">
+      <li class="options-footer"><a href="#">About</a></li>
+      <li class="options-footer"><a href="#">Careers</a></li>
+      <li class="options-footer"><a href="#">Events</a></li>
+      <li class="options-footer"><a href="#">Products</a></li>
+      <li class="options-footer"><a href="#">Support</a></li>
+    </ul>
+    <div id="redes-sociais-mobile"> 
+      <a href="#" class="redes"><img src="images/icon-facebook.svg" alt=""></a> 
+      <a href="#" class="redes"><img src="images/icon-twitter.svg" alt=""></a> 
+      <a href="#" class="redes"><img src="images/icon-pinterest.svg" alt=""></a> 
+      <a href="#" class="redes"><img src="images/icon-instagram.svg" alt=""></a> 
+     </div>
+    <div id="texto-footer"> 
+      <h1> @ 2022 Loopstudios. All rights reserved.</h1></div>
+
+    </div>
+
+</div>
+  
+  </div>
+
+
+  </footer>
+
+  <script>
+var hamburguer = document.getElementsByClassName("hamburguer")[0]
+var menumob = document.getElementsByClassName("menu-mobile")[0]
+hamburguer.addEventListener("click",mostrar)
+
+function mostrar(){
+  var cabecalho = document.getElementsByTagName("header")[0]
+  var mensagem = document.getElementsByClassName("mensagem")[0]
+  
+  if(hamburguer.classList.contains("show-mobile")){
+    hamburguer.classList.remove('plano-fundo')
+    menumob.classList.remove('show-mobile')
+    cabecalho.classList.remove('show-mobile')
+    mensagem.classList.remove('ocultar')
+  }
+  else{
+    hamburguer.classList.add("plano-fundo")
+    menumob.classList.add("show-mobile")
+    cabecalho.classList.add("show-mobile")
+    mensagem.classList.add("ocultar")
+
+  }
+}
+
+
+  </script>
+</body>
+</html>

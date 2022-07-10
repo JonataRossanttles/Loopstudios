@@ -1,0 +1,485 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root {
+    --var-fonte-titulo:'Josefin Sans', sans-serif;
+    --var-fonte-corpo: 'Alata', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* CONFIGURAÇÃO DO CABEÇALHO*/
+header{
+    width: 100%;
+    height: 700px;
+    background-image: url("images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#menu-container{
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+    padding: 80px;
+}
+#menu{
+    display: flex;
+}
+.hamburguer{
+    display: none;
+    width: 20px;
+    height:20px ;
+}
+.menu-mobile{
+    display: none;
+    background-color: black;
+    padding: 20px 0px 20px 0px;
+
+}
+.menu-mobile .options-menu{
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.menu-mobile .options-menu a{
+    width: 100px;
+    border-radius: 30px;
+    padding: 8px 10px 8px 10px;
+}
+.menu-mobile .options-menu a:hover{
+    background-color: white;
+    color: black;
+    
+}
+.options-menu, #logo{
+    padding: 20px;
+    list-style: none;
+}
+.options-menu a {
+    text-decoration: none;
+    color: white;
+    font-family:var(--var-fonte-corpo)
+}
+#mensagem-cabeçalho{
+    width: 700px;
+    height: 300px;
+    border: 2px solid white;
+    margin-left: 100px;
+    padding: 20px;
+}
+#mensagem-cabeçalho p{
+   color: white;
+   font-family: var(--var-fonte-titulo);
+   font-size: 5rem;
+   
+}
+main{
+    max-width: 1400px;
+    margin: auto;
+}
+#container-homem-oculos{
+    display: flex;
+    position: relative;
+  width: 100%;
+    height: 800px;
+    padding: 150px 0px 0px 90px;
+    
+}
+.homem-oculos{
+    width: 700px;
+}
+.homem-oculos img{
+    width: 100%;
+}
+.texto-homem-oculos{
+    position: absolute;
+    padding: 90px 0px 40px 80px;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    top: 38%;
+    left: 46%;
+   
+}
+.texto-homem-oculos h1{
+    font-family: var(--var-fonte-titulo);
+font-size: 3rem;
+font-weight: 300;
+margin-bottom: 25px;
+}
+.texto-homem-oculos p{
+    font-family: var(--var-fonte-corpo);
+    font-weight:100;
+    color: hsl(0, 0%, 55%);
+    line-height: 1.7rem;
+}
+#container-our-creations{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 90px;
+ 
+}
+.our-creations{
+    align-self: center;
+  
+}
+.our-creations h1{
+    font-family: var(--var-fonte-titulo);
+    font-size: 3rem;
+    font-weight:100;
+}
+
+.see-all{
+    text-align: center;
+    border: solid 2px;
+    
+    border-radius: 2px;
+    padding: 10px 20px 5px 20px;
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    font-size: 1.1rem;
+    color: black;
+    font-family: var(--var-fonte-corpo);
+text-decoration: none;
+}
+.see-all2{
+    display: none;
+    text-align: center;
+    border: solid 2px;
+    border-radius: 2px;
+    padding: 10px 20px 5px 20px;
+    height: 50px;
+    width: 250px;
+    background-color: white;
+    font-size: 1.1rem;
+    color: black;
+    font-family: var(--var-fonte-corpo);
+text-decoration: none;
+}
+.see-all:hover{
+    background-color: black;
+    color: white;
+}
+#container-galeria-fotos{
+    display: grid;
+    grid: 600px 600px / auto auto auto auto;
+    padding: 100px 0px 200px 90px;
+    gap: 30px;
+}
+
+.foto{
+    display: flex;
+    background-position: center ;
+    background-size: cover;
+    text-decoration: none;
+    color: white;
+    font-family: var(--var-fonte-titulo);
+    align-items: flex-end;
+    font-family: var(--var-fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 100;
+   
+    padding: 0px 0px 50px 30px;
+    
+}
+.foto:hover  {
+    opacity: 0.5;
+    
+    
+}
+.foto h1{
+    align-self: flex-end;
+    color: white;
+    font-family: var(--var-fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: 100;
+    width: 200px;
+    
+    
+
+}
+/*Background da galeria de fotos*/
+#foto1{
+    background-image: url(images/desktop/image-deep-earth.jpg);
+
+}
+#foto2{
+    background-image: url(images/desktop/image-night-arcade.jpg);
+}
+#foto3{
+    background-image: url(images/desktop/image-soccer-team.jpg);
+}
+#foto4{
+    background-image: url(images/desktop/image-grid.jpg);
+}
+#foto5{
+    background-image: url(images/desktop/image-from-above.jpg);
+}
+#foto6{
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+}
+#foto7{
+    background-image: url(images/desktop/image-curiosity.jpg);
+}
+#foto8{
+    background-image: url(images/desktop/image-fisheye.jpg);
+}
+footer{
+    background-color: black;
+    height: 200px;
+}
+#footer1{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px 10px 150px;
+}
+#redes-sociais img{
+    padding: 7px;
+}
+#redes-sociais-mobile{
+    display: none;
+}
+#redes-sociais-mobile img{
+    padding: 7px;
+}
+.redes:hover{
+    border-bottom: solid 2px white;
+}
+#footer2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px 0px 150px;
+}
+
+#menu-footer{
+    display: flex;
+   
+}
+#menu-footer a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--var-fonte-titulo);
+    font-weight: bold;
+    margin: 0px 20px 0px 0px;
+}
+.options-footer a:hover{
+    border-bottom: solid 2px white;
+}
+#texto-footer h1{
+    font-family: var(--var-fonte-corpo);
+    color: hsl(0, 0%, 55%);
+    font-size: 1rem;
+}
+@media screen and (max-width:1112px){
+#container-homem-oculos{
+    position: static;
+    display: block;
+    height: 1000px;
+    margin: auto;
+    padding: 150px 0px 0px 0px;
+}
+#container-our-creations{
+    padding:0;
+   justify-content: center;
+}
+.texto-homem-oculos{
+    position: static;
+    margin: auto;
+    margin-top: 40px;
+    padding: 0;
+    text-align: center;
+   
+}
+.homem-oculos{
+    margin: auto;
+    width: 600px;
+}
+#container-galeria-fotos{
+   /* grid: 300px 300px 300px 300px 300px 300px 300px 300px / 500px ;*/
+    display: block;
+    padding-left: 0;
+    margin: auto;
+    width: 80%;
+    padding: 100px 0px 50px 0px;
+}
+#container-galeria-fotos a{
+    margin-bottom: 30px;
+    margin-right: 0;
+    height: 250px;
+    
+    
+}
+.see-all{
+    display: none;
+}
+.see-all2{
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+    
+}
+#foto1{
+    background-image: url(images/mobile/image-deep-earth.jpg);
+
+}
+#foto2{
+    background-image: url(images/mobile/image-night-arcade.jpg);
+}
+#foto3{
+    background-image: url(images/mobile/image-soccer-team.jpg);
+}
+#foto4{
+    background-image: url(images/mobile/image-grid.jpg);
+}
+#foto5{
+    background-image: url(images/mobile/image-from-above.jpg);
+}
+#foto6{
+    background-image: url(images/mobile/image-pocket-borealis.jpg);
+}
+#foto7{
+    background-image: url(images/mobile/image-curiosity.jpg);
+}
+#foto8{
+    background-image: url(images/mobile/image-fisheye.jpg);
+}
+#footer1{
+    justify-content: space-around;
+    padding: 50px 0px 10px 0px;
+}
+#footer2{
+    justify-content: space-around;
+    padding: 50px 0px 10px 0px;
+}
+}
+@media screen and (max-width:804px){
+    #menu-container{
+        padding: 80px 0px 80px 0px;
+    }
+#mensagem-cabeçalho{
+        width: 450px;
+        margin-left: 20px;
+    }
+#mensagem-cabeçalho p{
+        font-size: 4rem;
+}
+footer{
+    height: 500px;
+    
+}
+#footer1{
+    display: block;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+}
+#footer2{
+    display: block;
+    padding: 10px 0px 10px 0px;
+}
+#logo2{
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 30px;
+}
+#redes-sociais{
+    display: none;
+}
+#redes-sociais-mobile{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#container-footer{
+    display: flex;
+    flex-direction: column;
+}
+#menu-footer{
+  
+    display: block;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+
+    
+}
+#menu-footer a{
+margin-right: 0;
+}
+#menu-footer li{
+    margin-bottom: 30px;
+}
+#footer2 h1{
+    text-align: center;
+    
+}
+}
+@media screen and (max-width: 700px){
+    #menu-container{
+        padding: 80px 20px 80px 20px;
+    }
+    #container-homem-oculos{
+        height: 950px;
+    }
+    #menu{
+        display: none;
+    }
+    #mensagem-cabeçalho{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .hamburguer{
+        align-items: center;
+        background-image: url("images/icon-hamburger.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        width: 20px;
+        height:20px ;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    #logo{
+        padding: 0px;
+    }
+    .homem-oculos{
+        width: 90%;
+        
+    }
+    .texto-homem-oculos{
+        width: 90%;
+    }  
+    #container-our-creations h1{
+        font-size: 2.3rem;
+    }
+    .show-mobile{
+        display: block;
+        background-color: black;
+        background-image: none;
+    }
+    .ocultar{
+        display: none;
+    }
+    .plano-fundo{
+        background-image: url("images/icon-close.svg");
+    }
+
+}
+@media screen and (max-width: 470px){
+    #mensagem-cabeçalho p{
+        font-size: 2.5rem;
+    }
+    #mensagem-cabeçalho{
+        height: 230px;
+    }
+    .texto-homem-oculos h1{
+        font-size: 2.5rem;
+    }  
+
+}
