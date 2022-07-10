@@ -462,12 +462,14 @@ margin-right: 0;
         display: block;
         background-color: black;
         background-image: none;
+        
     }
     .ocultar{
         display: none;
     }
     .plano-fundo{
         background-image: url("images/icon-close.svg");
+        transition: 1s;
     }
 
 }
