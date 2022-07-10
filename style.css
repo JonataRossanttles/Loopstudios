@@ -39,11 +39,11 @@ header{
     display: none;
     background-color: black;
     padding: 20px 0px 20px 0px;
-
 }
 .menu-mobile .options-menu{
     padding: 10px;
     margin-bottom: 30px;
+    
 }
 .menu-mobile .options-menu a{
     width: 100px;
@@ -53,6 +53,7 @@ header{
 .menu-mobile .options-menu a:hover{
     background-color: white;
     color: black;
+    font-weight: bold;
     
 }
 .options-menu, #logo{
@@ -458,10 +459,13 @@ margin-right: 0;
     #container-our-creations h1{
         font-size: 2.3rem;
     }
+   
     .show-mobile{
         display: block;
         background-color: black;
         background-image: none;
+        opacity: 1;
+       
         
     }
     .ocultar{

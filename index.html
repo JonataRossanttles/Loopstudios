@@ -108,14 +108,15 @@
 
   <script>
 var hamburguer = document.getElementsByClassName("hamburguer")[0]
-var menumob = document.getElementsByClassName("menu-mobile")[0]
+
 hamburguer.addEventListener("click",mostrar)
 
 function mostrar(){
   var cabecalho = document.getElementsByTagName("header")[0]
   var mensagem = document.getElementsByClassName("mensagem")[0]
+  var menumob = document.getElementsByClassName("menu-mobile")[0]
   
-  if(hamburguer.classList.contains("show-mobile")){
+  if(hamburguer.classList.contains("plano-fundo")){
     hamburguer.classList.remove('plano-fundo')
     menumob.classList.remove('show-mobile')
     cabecalho.classList.remove('show-mobile')
